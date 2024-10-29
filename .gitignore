@@ -1,0 +1,11 @@
+**/__pycache__/**
+__pycache__/
+**DS_Store
+/media
+.DS_Store
+db.sqlite3
+#environments
+.env
+
+
+
