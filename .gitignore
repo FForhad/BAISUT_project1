@@ -9,3 +9,52 @@ db.sqlite3
 
 
 
+# Database
+db.sqlite3
+
+# Environment files
+.env
+
+# Node artifact files
+node_modules/
+dist/
+
+# Compiled Java class files
+*.class
+
+# Compiled Python bytecode
+__pycache__/
+*.py[cod]
+
+# Log files
+*.log
+
+# Package files
+*.jar
+
+# Maven build files
+target/
+dist/
+
+# JetBrains IDE files
+.idea/
+
+# Unit test reports
+TEST*.xml
+
+# OS-specific generated files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Executable and application files
+*.app
+*.exe
+*.war
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
