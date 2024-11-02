@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from ..models import Book
+from books.models import Book
 
 def book_list(request):
     """
