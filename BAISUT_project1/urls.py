@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('app_test/', include('app_test.urls')), #added app_test app
     path('books/', include('books.urls')),
+    path('models/', include('app_model.urls')),
 ]

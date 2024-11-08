@@ -1,0 +1,17 @@
+<!-- templates/myapp/publication_detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ publication.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ publication.title }}</h1>
+        <p><strong>Author:</strong> {{ publication.author.name }}</p>
+        <p><strong>Published Date:</strong> {{ publication.published_date }}</p>
+        <p><strong>Description:</strong> {{ publication.description }}</p>
+    </div>
+</body>
+</html>

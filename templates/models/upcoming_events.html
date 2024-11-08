@@ -1,0 +1,23 @@
+<!-- templates/myapp/upcoming_events.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upcoming Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upcoming Events</h1>
+        <ul class="list-group">
+            {% for event in events %}
+                <li class="list-group-item">
+                    {{ event.name }} - Starts on {{ event.start_date }} - Ends on {{ event.end_date }}
+                </li>
+            {% empty %}
+                <li class="list-group-item">No upcoming events found.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

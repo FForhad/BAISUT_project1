@@ -1,0 +1,23 @@
+<!-- templates/myapp/publications_by_author.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publications by {{ author_name }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Publications by {{ author_name }}</h1>
+        <ul class="list-group">
+            {% for publication in publications %}
+                <li class="list-group-item">
+                    <a href="{% url 'specific_publication' publication.id %}">{{ publication.title }}</a>
+                </li>
+            {% empty %}
+                <li class="list-group-item">No publications found for this author.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
