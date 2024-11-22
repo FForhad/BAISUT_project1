@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'app_test',
     'books',
     'app_model',
+    'form_auth',
 ]
 
 MIDDLEWARE = [

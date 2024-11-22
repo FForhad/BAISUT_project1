@@ -22,4 +22,5 @@ urlpatterns = [
     path('app_test/', include('app_test.urls')), #added app_test app
     path('books/', include('books.urls')),
     path('models/', include('app_model.urls')),
+    path('forms/', include('form_auth.urls')),
 ]
